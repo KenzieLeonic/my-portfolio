@@ -2,7 +2,7 @@ import { createRouter, createMemoryHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BlogView from '../views/blog/[slug]/BlogView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
-import AllBlogView from '@/views/AllBlogView.vue'
+import AllBlogView from '../views/blog/AllBlogView.vue'
 const routes = [
   {
     path: '/',
@@ -15,7 +15,7 @@ const routes = [
     component: () => import('../views/AboutView.vue')
   },
   {
-    path: '/blogs/:id',
+    path: '/blogs/:slug',
     component: BlogView,
   },
   {

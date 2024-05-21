@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     '@vue/eslint-config-prettier/skip-formatting'
   ],
+  env:{browser:true, es2020:true, node:true},
   overrides: [
     {
       files: [
